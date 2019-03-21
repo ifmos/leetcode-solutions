@@ -1,7 +1,7 @@
 {
-  "name": "leetcode-javascript-jest",
+  "name": "leetcode-solutions",
   "version": "0.0.0",
-  "description": "Starter kit with zero-config for testing LeetCode answer in JavaScript, supported by jest, recommend working with vscode!",
+  "description": "LeetCode solutions with JavaScript started from [leetcode-javascript-jest](https://github.com/ifmos/leetcode-javascript-jest)",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

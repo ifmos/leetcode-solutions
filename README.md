@@ -1,6 +1,6 @@
-# LeetCode Javascript Jest
+# LeetCode Solutions
 
-Starter kit with zero-config for testing LeetCode answer in JavaScript, supported by jest, recommend working with vscode!
+LeetCode solutions with JavaScript started from [leetcode-javascript-jest](https://github.com/ifmos/leetcode-javascript-jest)
 
 ## Requirements
 
