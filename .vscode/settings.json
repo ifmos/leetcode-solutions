@@ -1,1 +1,4 @@
-{}
+{
+  "eslint.enable": false,
+  "git.inputValidationSubjectLength": 200
+}
