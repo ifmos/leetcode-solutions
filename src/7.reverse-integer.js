@@ -45,19 +45,19 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
-  var max = Math.pow(2, 31) - 1;
-  var min = -Math.pow(2, 31);
-  var isNegative = x < 0;
-  var strX = "" + Math.abs(x);
-  var len = strX.length;
-  var temp = "";
+var reverse = function (x) {
+  var max = Math.pow(2, 31) - 1
+  var min = -Math.pow(2, 31)
+  var isNegative = x < 0
+  var strX = '' + Math.abs(x)
+  var len = strX.length
+  var temp = ''
   for (var i = len - 1; i >= 0; i--) {
-    temp += strX[i];
+    temp += strX[i]
   }
 
-  var result = isNegative ? +("-" + temp) : +temp;
+  var result = isNegative ? +('-' + temp) : +temp
 
-  return result >= min && result <= max ? result : 0;
-};
-module.exports = { reverse };
+  return result >= min && result <= max ? result : 0
+}
+module.exports = { reverse }

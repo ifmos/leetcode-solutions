@@ -48,31 +48,31 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findPeakElement = function(nums) {
+var findPeakElement = function (nums) {
   if (nums.length === 0) {
-    return -1;
+    return -1
   }
   if (nums.length === 1) {
-    return 0;
+    return 0
   }
   if (nums.length === 2) {
-    return nums[0] > nums[1] ? 0 : 1;
+    return nums[0] > nums[1] ? 0 : 1
   }
-  let index = -1;
+  let index = -1
   for (let i = 0; i < nums.length; i++) {
     if (i === 0 && nums[i] > nums[i + 1]) {
-      index = i;
-      break;
+      index = i
+      break
     }
     if (i === nums.length - 1 && nums[i] > nums[i - 1]) {
-      index = i;
-      break;
+      index = i
+      break
     }
     if (nums[i] > nums[i - 1] && nums[i] > nums[i + 1]) {
-      index = i;
-      break;
+      index = i
+      break
     }
   }
-  return index;
-};
-module.exports = findPeakElement;
+  return index
+}
+module.exports = findPeakElement

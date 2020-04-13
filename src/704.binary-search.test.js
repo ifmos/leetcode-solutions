@@ -50,13 +50,13 @@
  * @return {number}
  */
 
-const search = require("./704.binary-search");
+const search = require('./704.binary-search')
 
-describe("#704.Binary Search", () => {
-  it("should work", () => {
-    expect(search([-1, 0, 3, 5, 9, 12], 9)).toEqual(4);
-    expect(search([-1, 0, 3, 5, 9, 12], 2)).toEqual(-1);
-    expect(search([5], 5)).toEqual(0);
-    expect(search([-1, 0, 5], 0)).toEqual(1);
-  });
-});
+describe('#704.Binary Search', () => {
+  it('should work', () => {
+    expect(search([-1, 0, 3, 5, 9, 12], 9)).toEqual(4)
+    expect(search([-1, 0, 3, 5, 9, 12], 2)).toEqual(-1)
+    expect(search([5], 5)).toEqual(0)
+    expect(search([-1, 0, 5], 0)).toEqual(1)
+  })
+})

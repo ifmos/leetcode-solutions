@@ -39,14 +39,14 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findMin = require("./153.find-minimum-in-rotated-sorted-array");
+var findMin = require('./153.find-minimum-in-rotated-sorted-array')
 
-describe("#153.Find Minimum In Rotated Sorted Array", () => {
-  it("should work", () => {
-    expect(findMin([3, 4, 5, 1, 2])).toEqual(1);
-    expect(findMin([4, 5, 6, 7, 0, 1, 2])).toEqual(0);
-    expect(findMin([1, 2, 3])).toEqual(1);
-    expect(findMin([3, 4, 5, 6, 1, 2])).toEqual(1);
-    expect(findMin([2, 1])).toEqual(1);
-  });
-});
+describe('#153.Find Minimum In Rotated Sorted Array', () => {
+  it('should work', () => {
+    expect(findMin([3, 4, 5, 1, 2])).toEqual(1)
+    expect(findMin([4, 5, 6, 7, 0, 1, 2])).toEqual(0)
+    expect(findMin([1, 2, 3])).toEqual(1)
+    expect(findMin([3, 4, 5, 6, 1, 2])).toEqual(1)
+    expect(findMin([2, 1])).toEqual(1)
+  })
+})

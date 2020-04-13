@@ -48,16 +48,16 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var rotate = function(nums, k) {
-  let temp;
+var rotate = function (nums, k) {
+  let temp
   while (k > 0) {
     for (var i = nums.length - 1; i > 0; i--) {
-      temp = nums[i];
-      nums[i] = nums[i - 1];
-      nums[i - 1] = temp;
+      temp = nums[i]
+      nums[i] = nums[i - 1]
+      nums[i - 1] = temp
     }
-    k--;
+    k--
   }
-};
+}
 
-module.exports = rotate;
+module.exports = rotate

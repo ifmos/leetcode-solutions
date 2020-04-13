@@ -42,13 +42,12 @@
  * @param {number} target
  * @return {number}
  */
-var search = require("./33.search-in-rotated-sorted-array");
-
-describe("#33.Search in rotated sorted array", () => {
-  it("should work", () => {
-    expect(search([4, 5, 6, 7, 0, 1, 2], 0)).toEqual(4);
-    expect(search([4, 5, 6, 7, 0, 1, 2], 3)).toEqual(-1);
-    expect(search([1, 3], 3)).toEqual(1);
-    expect(search([4, 5, 6, 7, 0, 1, 2], 5)).toEqual(1);
-  });
-});
+var search = require('./33.search-in-rotated-sorted-array')
+describe('#33.Search in rotated sorted array', () => {
+  it('should work', () => {
+    expect(search([4, 5, 6, 7, 0, 1, 2], 0)).toEqual(4)
+    expect(search([4, 5, 6, 7, 0, 1, 2], 3)).toEqual(-1)
+    expect(search([1, 3], 3)).toEqual(1)
+    expect(search([4, 5, 6, 7, 0, 1, 2], 5)).toEqual(1)
+  })
+})

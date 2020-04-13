@@ -1,4 +1,3 @@
 {
-  "eslint.enable": false,
-  "git.inputValidationSubjectLength": 200
+    "eslint.enable": true
 }

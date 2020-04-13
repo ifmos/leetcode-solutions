@@ -51,17 +51,17 @@
  * @param {number} target
  * @return {boolean}
  */
-var searchMatrix = require("./74.search-a-2-d-matrix");
+var searchMatrix = require('./74.search-a-2-d-matrix')
 
-describe("#74.Search a 2d matrix", () => {
-  it("should work", () => {
+describe('#74.Search a 2d matrix', () => {
+  it('should work', () => {
     expect(
       searchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]], 3)
-    ).toBe(true);
+    ).toBe(true)
     expect(
       searchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 50]], 13)
-    ).toBe(false);
-    expect(searchMatrix([], 0)).toBe(false);
-    expect(searchMatrix([[1]], 1)).toBe(true);
-  });
-});
+    ).toBe(false)
+    expect(searchMatrix([], 0)).toBe(false)
+    expect(searchMatrix([[1]], 1)).toBe(true)
+  })
+})

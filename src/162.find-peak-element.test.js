@@ -48,16 +48,16 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findPeakElement = require("./162.find-peak-element");
+var findPeakElement = require('./162.find-peak-element')
 
-describe("#162.find-peak-element", () => {
-  it("should work", () => {
-    expect(findPeakElement([1, 2, 3, 1])).toEqual(2);
-    expect(findPeakElement([1])).toEqual(0);
-    expect(findPeakElement([3, 2, 1])).toEqual(0);
-    expect(findPeakElement([1, 2, 3])).toEqual(2);
+describe('#162.find-peak-element', () => {
+  it('should work', () => {
+    expect(findPeakElement([1, 2, 3, 1])).toEqual(2)
+    expect(findPeakElement([1])).toEqual(0)
+    expect(findPeakElement([3, 2, 1])).toEqual(0)
+    expect(findPeakElement([1, 2, 3])).toEqual(2)
     expect(
       [1, 5].indexOf(findPeakElement([1, 2, 1, 3, 5, 6, 4]))
-    ).toBeGreaterThan(-1);
-  });
-});
+    ).toBeGreaterThan(-1)
+  })
+})

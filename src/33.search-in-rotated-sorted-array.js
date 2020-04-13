@@ -42,47 +42,47 @@
  * @param {number} target
  * @return {number}
  */
-var search = function(nums, target) {
+var search = function (nums, target) {
   if (!nums.length) {
-    return -1;
+    return -1
   }
-  let left = 0;
-  let right = nums.length - 1;
+  let left = 0
+  let right = nums.length - 1
   while (left <= right) {
-    let middle = ~~((left + right) / 2);
+    const middle = ~~((left + right) / 2)
     if (nums[left] === target) {
-      return left;
+      return left
     }
     if (nums[right] === target) {
-      return right;
+      return right
     }
     if (nums[middle] === target) {
-      return middle;
+      return middle
     }
     // 循环二分搜索
     if (nums[left] > nums[right]) {
       // middle 在右半区
       if (nums[middle] < nums[left]) {
         if (target > nums[middle] && target < nums[left]) {
-          left = middle + 1;
+          left = middle + 1
         } else {
-          right = middle - 1;
+          right = middle - 1
         }
       } else {
         if (target < nums[middle] && target > nums[right]) {
-          right = middle - 1;
+          right = middle - 1
         } else {
-          left = middle + 1;
+          left = middle + 1
         }
       }
       // 常规二分搜索
     } else if (target < nums[middle]) {
-      right = middle - 1;
+      right = middle - 1
     } else {
-      left = middle + 1;
+      left = middle + 1
     }
   }
-  return -1;
-};
+  return -1
+}
 
-module.exports = search;
+module.exports = search

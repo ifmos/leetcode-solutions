@@ -49,57 +49,57 @@
  * @param {number} target
  * @return {boolean}
  */
-var searchMatrix = function(matrix, target) {
-  if (!matrix.length) return false;
-  let start = 0;
-  let end = matrix.length - 1;
-  let innerLength = matrix[end].length;
-  let middle;
-  let current;
-  let result = false;
+var searchMatrix = function (matrix, target) {
+  if (!matrix.length) return false
+  let start = 0
+  let end = matrix.length - 1
+  const innerLength = matrix[end].length
+  let middle
+  let current
+  let result = false
   while (start <= end) {
-    middle = ~~((start + end) / 2);
+    middle = ~~((start + end) / 2)
     if (current) {
-      start = 0;
-      end = innerLength - 1;
+      start = 0
+      end = innerLength - 1
       while (start <= end) {
-        middle = ~~((start + end) / 2);
+        middle = ~~((start + end) / 2)
         if (
           current[middle] === target ||
           current[start] === target ||
           current[end] === target
         ) {
-          result = true;
-          break;
+          result = true
+          break
         } else if (current[middle] > target) {
-          end = middle - 1;
+          end = middle - 1
         } else {
-          start = middle + 1;
+          start = middle + 1
         }
       }
-      break;
+      break
     } else if (
       matrix[start][0] <= target &&
       matrix[start][innerLength - 1] >= target
     ) {
-      current = matrix[start];
+      current = matrix[start]
     } else if (
       matrix[middle][0] <= target &&
       matrix[middle][innerLength - 1] >= target
     ) {
-      current = matrix[middle];
+      current = matrix[middle]
     } else if (
       matrix[end][0] <= target &&
       matrix[end][innerLength - 1] >= target
     ) {
-      current = matrix[end];
+      current = matrix[end]
     } else if (matrix[middle][0] > target) {
-      end = middle - 1;
+      end = middle - 1
     } else {
-      start = middle + 1;
+      start = middle + 1
     }
   }
-  return result;
-};
+  return result
+}
 
-module.exports = searchMatrix;
+module.exports = searchMatrix

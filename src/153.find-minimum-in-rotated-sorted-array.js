@@ -39,27 +39,27 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findMin = function(nums) {
-  let start = 0;
-  let end = nums.length - 1;
+var findMin = function (nums) {
+  let start = 0
+  let end = nums.length - 1
   if (nums.length === 1 || nums[end] >= nums[0]) {
-    return nums[0];
+    return nums[0]
   }
 
-  let middle;
+  let middle
   while (start < end) {
-    middle = (end + start) >> 1;
+    middle = (end + start) >> 1
 
     if (nums[middle] < nums[middle - 1]) {
-      return nums[middle];
+      return nums[middle]
     }
 
     if (nums[middle] > nums[middle + 1]) {
-      return nums[middle + 1];
+      return nums[middle + 1]
     }
 
-    nums[middle] > nums[0] ? (start = middle) : (end = middle);
+    nums[middle] > nums[0] ? (start = middle) : (end = middle)
   }
-};
+}
 
-module.exports = findMin;
+module.exports = findMin

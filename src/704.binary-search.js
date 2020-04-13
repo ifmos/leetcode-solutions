@@ -49,35 +49,35 @@
  * @param {number} target
  * @return {number}
  */
-var search = function(nums, target) {
-  if (nums[0] > target || nums[nums.length - 1] < target) return -1;
-  let hight = nums.length - 1;
-  let low = 0;
-  let middle = getMiddleIndex(hight, low);
+var search = function (nums, target) {
+  if (nums[0] > target || nums[nums.length - 1] < target) return -1
+  let hight = nums.length - 1
+  let low = 0
+  let middle = getMiddleIndex(hight, low)
 
   while (hight >= low) {
     if (nums[hight] === target) {
-      return hight;
+      return hight
     }
     if (nums[low] === target) {
-      return low;
+      return low
     }
     if (nums[middle] === target) {
-      return middle;
+      return middle
     }
     if (nums[middle] > target) {
-      hight = middle - 1;
-      middle = getMiddleIndex(hight, low);
+      hight = middle - 1
+      middle = getMiddleIndex(hight, low)
     } else {
-      low = middle + 1;
-      middle = getMiddleIndex(hight, low);
+      low = middle + 1
+      middle = getMiddleIndex(hight, low)
     }
   }
-  return -1;
-};
-
-function getMiddleIndex(start, end) {
-  return Math.floor((start + end) / 2);
+  return -1
 }
 
-module.exports = search;
+function getMiddleIndex (start, end) {
+  return Math.floor((start + end) / 2)
+}
+
+module.exports = search

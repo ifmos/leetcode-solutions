@@ -48,14 +48,14 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var rotate = require("./189.rotate-array");
-describe("#189.Rotate Array", () => {
-  it("should work", () => {
-    let nums1 = [1, 2, 3, 4, 5, 6, 7];
-    rotate(nums1, 3);
-    expect(nums1.join("")).toEqual([5, 6, 7, 1, 2, 3, 4].join(""));
-    let nums2 = [-1, -100, 3, 99];
-    rotate(nums2, 2);
-    expect(nums2.join("")).toEqual([3, 99, -1, -100].join(""));
-  });
-});
+var rotate = require('./189.rotate-array')
+describe('#189.Rotate Array', () => {
+  it('should work', () => {
+    const nums1 = [1, 2, 3, 4, 5, 6, 7]
+    rotate(nums1, 3)
+    expect(nums1.join('')).toEqual([5, 6, 7, 1, 2, 3, 4].join(''))
+    const nums2 = [-1, -100, 3, 99]
+    rotate(nums2, 2)
+    expect(nums2.join('')).toEqual([3, 99, -1, -100].join(''))
+  })
+})
